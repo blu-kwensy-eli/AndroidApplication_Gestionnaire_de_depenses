@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+              
+>   
+    
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    >
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"            
+            android:baselineAligned="false" 
+        >
+        <!--Propriété android:baselineAligned ci-dessous ::  Suggestion jdk pour plus de performance-->
+            <!--Ici je veux disposer les champs cote a cote et occupant chacun la moitié de l'écran-->
+            <!--colonne 1-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+                <TextView style="@style/AppEditTextLabel" android:text="Montant" />   
+                     
+                <EditText
+                    style="@style/AppEditText"
+                    android:id="@+id/nouvelle_depense_montant_edit_text"
+                    android:inputType="numberDecimal"            
+                />
+            
+                   
+                <TextView       
+                    style="@style/AppEditTextLabel"
+                    android:text="@string/libelle"            
+                />
+                <EditText
+                    style="@style/AppEditText"
+                    android:id="@+id/nouvelle_depense_libelle_edit_text"
+                    android:inputType="text" 
+                />
+         
+        
+                <TextView       
+                    style="@style/AppEditTextLabel"
+                    android:text="Date"            
+                />
+        
+        
+        
+                <DatePicker
+            
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:startYear="2012"
+                    android:endYear="2032"
+            
+                    android:calendarViewShown="false"
+                    android:id="@+id/nouvelle_depense_date_date_picker"
+                />
+                       
+            </LinearLayout>
+            <!--FIN //// Colonne 1-->  
+         
+         
+            <!-- Colonne 2--> 
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+         
+                <TextView       
+                    style="@style/AppEditTextLabel"
+                    android:text="Devise"            
+                />
+        
+                <Spinner        
+                    android:id="@+id/nouvelle_depense_devise_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:layout_marginBottom="10dp"   
+                    style="AppInputTextColor"            
+                />        
+            
+            
+                <TextView       
+                    style="@style/AppEditTextLabel"
+                    android:text="Type"            
+                />
+                <Spinner        
+                    android:id="@+id/nouvelle_depense_type_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:layout_marginBottom="10dp"   
+                    style="AppInputTextColor"            
+                />
+            
+                <TextView       
+                    style="@style/AppEditTextLabel"
+                    android:text="Heure"            
+                />
+                <TimePicker
+                    android:id="@+id/nouvelle_depense_heure_time_picker"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"   
+                    style="AppInputTextColor"            
+                />
+            </LinearLayout>
+            <!--FIN //// Colonne 2-->  
+        
+             
+        </LinearLayout>            
+        <!--  FIN //// Ici je veux disposer les champs cote a cote et occupant chacun la moitié de l'écran-->
+            
+        
+        
+        <org.protech.theprophet.android.gestionnairedepenses.customviews.Button  
+            android:id="@+id/nouvelle_depense_ok_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"          
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            style="AppBtnTextColor"
+            
+        />
+        
+ 
+    </LinearLayout>
+</ScrollView>

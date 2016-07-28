@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingTop="10sp"
+            
+            
+              
+>   
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        
+    >         
+        <!--colonne 1-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:paddingRight="5sp"
+        >
+        
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:paddingRight="0sp"
+                android:paddingLeft="3sp"
+                android:textColor="@color/white"
+                android:background="@color/color9"
+                android:text="% jour"
+                
+            />
+            <TextView 
+                android:id="@+id/details_depense_pourcentage"
+                style="@style/AppTextViewDisplayData"
+                android:paddingRight="0sp"
+                android:paddingLeft="3sp"
+                android:textSize="40sp"
+                android:text="100" 
+                
+        
+            />
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:paddingRight="0sp"
+                android:paddingLeft="3sp"
+                android:textColor="@color/white"
+                android:background="@color/color9"
+                android:id="@+id/details_depense_devise_locale"
+                android:text=""
+                
+            />
+            <ScrollView
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            >
+                
+                    <TextView 
+                        android:id="@+id/details_depense_valeur_devise_locale"
+                        style="@style/AppTextViewDisplayData"
+                        android:paddingRight="0sp"
+                        android:paddingLeft="3sp"
+                        android:textSize="40sp"  
+                 
+                       android:singleLine="true"
+                        android:scrollHorizontally="true"
+                       
+                    />
+                
+            </ScrollView>
+        
+        
+            
+        </LinearLayout>        
+        <!--FIN colonne 1-->
+        
+        <!--colonne 2-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+        
+            
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:paddingRight="0sp"
+                android:paddingLeft="3sp"
+                android:textColor="@color/white"
+                android:background="@color/color9"
+                android:text="Détails"
+                android:layout_marginBottom="13sp"
+            />
+            <TextView 
+                style="@style/AppTextViewDisplayData"
+                android:id="@+id/details_depense_id"  
+                android:visibility="gone"
+            />
+         
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:text="@string/libelle" 
+            />
+            <ImageView
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+            />
+            <TextView 
+                style="@style/AppTextViewDisplayData"
+                android:id="@+id/details_depense_libelle"  
+            />
+        
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:text="@string/montant"                  
+            />
+            <ImageView
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+            />
+            <TextView 
+                style="@style/AppTextViewDisplayData"
+                android:id="@+id/details_depense_montant"  
+            />
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:text="@string/devise"          
+                
+                
+            />
+            <ImageView
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+            />
+            <TextView 
+                style="@style/AppTextViewDisplayData"
+                android:id="@+id/details_depense_devise"  
+            />
+            
+            
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:text="@string/date"            
+            />
+            <ImageView
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+            />
+            <TextView 
+                style="@style/AppTextViewDisplayData"
+                android:id="@+id/details_depense_date"  
+            />
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:text="@string/type"           
+            />
+            <ImageView
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+            />
+            <TextView 
+                style="@style/AppTextViewDisplayData"
+                android:id="@+id/details_depense_type"  
+            />
+ 
+        </LinearLayout>
+        <!--FIN colonne 2-->
+ 
+    </LinearLayout>
+</ScrollView>

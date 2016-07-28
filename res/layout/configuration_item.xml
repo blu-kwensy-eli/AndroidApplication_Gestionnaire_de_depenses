@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout-->
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    
+   
+                
+>   
+    
+    <TextView 
+        android:id="@+id/configuration_code"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/color9"        
+        android:fontFamily="COMIC SANS MS"
+    />
+    <TextView 
+        android:typeface="monospace"
+        android:id="@+id/configuration_valeur"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/color9"
+        
+    />
+    
+
+    </LinearLayout>
+<!--</RelativeLayout>-->
