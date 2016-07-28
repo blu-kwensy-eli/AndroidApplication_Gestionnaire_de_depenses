@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mes dépenses</string>
+    <string name="liste_des_depenses">Liste des dépenses</string>
+    <string name="libelle">Libellé</string>
+    <string name="montant">Montant</string>
+    <string name="devise">Devise</string>
+    <string name="type">Type</string>
+    <string name="date">Date</string>
+    <string name="nouvelle_depense">Nouvelle dépense</string>
+    <string name="rechercher">Rechercher</string>
+    <string name="aucune_depense">Aucune dépense</string>
+    <string name="modifier_depense">Modifier dépense</string>
+    <string name="details_depense">Détails</string>
+    <string name="configuration">Paramètres</string>
+    <string name="configuration_taux_change">Paramètres | Taux de change </string>
+    <string name="aujourd_hui">Aujourd\'hui</string>
+    <string name="titre_entete_de_type">Catégorie %1$s</string>
+    <string name="dialog1_titre">"Supprimer dépense?"</string>
+    <string name="dialog1_reponse_oui">Supprimer</string>
+    <string name="dialog1_reponse_non">Annuler</string>
+    <string name="dialog_configuration_changer_taux_ok">Enregistrer</string>
+    <string name="dialog_configuration_changer_taux_annuler">Annuler</string>
+    <string name="menu_item_title_repartir">Répartir</string>
+    <string name="menu_item_title_retablir">Rétablir</string>
+</resources>

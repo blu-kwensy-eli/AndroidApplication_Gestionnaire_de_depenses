@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+     <item android:id="@+id/search_menu_item" android:title="Rechercher"  android:icon="@android:drawable/ic_menu_search"
+     android:showAsAction="collapseActionView|ifRoom"
+          android:actionViewClass="android.widget.SearchView" > 
+     </item>
+ 
+    <item android:id="@+id/root_menu_item" android:title="" android:showAsAction="collapseActionView" >
+        <menu>
+            <item android:id="@+id/new_menu_item" android:title="Ajouter dépense" android:showAsAction="always" > </item>
+            <item android:id="@+id/group_by_type_menu_item" android:title="Répartir" android:showAsAction="always" > </item>            
+            <item android:id="@+id/test_menu_item" android:title="Tes" android:showAsAction="always"> </item>            
+        </menu>
+    </item>
+
+   </menu>

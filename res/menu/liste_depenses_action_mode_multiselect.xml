@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+            <item android:id="@+id/delete_selected_menu_item"
+          android:title="Supprimer sélection"
+          android:icon="@android:drawable/ic_menu_delete"
+          android:showAsAction="always" > </item>
+            
+    
+</menu>

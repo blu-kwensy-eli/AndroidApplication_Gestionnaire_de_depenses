@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout-->
+<org.protech.theprophet.android.gestionnairedepenses.customviews.DepenseItemLayout
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/depense_item_root_layout"
+   
+                
+>   
+    
+    
+    
+    <TextView 
+        android:id="@+id/entete_de_section_pour_depenses_de_meme_type"
+        android:paddingRight="0sp"
+        android:paddingLeft="0sp"
+        style="@style/AppEditTextLabel"
+        android:height="39sp"
+        android:text=""
+        android:textColor="@color/white"
+        android:background="@color/color4"
+        android:layout_alignParentTop="true"  
+        android:textStyle="bold"     
+        android:gravity="center"   
+        android:layout_marginBottom="3sp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        
+        
+    />
+    <!--invisible par défaut-->
+    <TextView 
+        android:id="@+id/depense_date_si_premier"
+        android:paddingRight="0sp"
+        android:paddingLeft="0sp"
+        style="@style/AppEditTextLabel"
+        android:textColor="@color/white"
+        android:background="@color/color9"
+        android:layout_below="@id/entete_de_section_pour_depenses_de_meme_type"
+        android:textStyle="bold"     
+        android:gravity="center"   
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+    />
+   
+    
+    <TextView 
+        android:id="@+id/depense_illustration_type"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/depense_date_si_premier"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10sp"
+        android:textSize="54sp"
+        android:text="(A)"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="@color/color9"        
+        android:fontFamily="COMIC SANS MS"
+        
+    />
+    <TextView 
+        android:id="@+id/depense_montant"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@id/depense_illustration_type"
+        android:layout_toRightOf="@id/depense_illustration_type"
+        android:textSize="16sp"
+        android:textColor="@color/color9"        
+        android:fontFamily="COMIC SANS MS"
+    />
+    <TextView 
+        android:typeface="monospace"
+        android:id="@+id/depense_libelle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/depense_montant"
+        android:ellipsize="marquee"
+        android:textSize="14sp"
+        android:textColor="@color/color9"
+        android:layout_toRightOf="@id/depense_illustration_type"
+        
+    />
+    <TextView 
+        android:id="@+id/depense_type"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/depense_libelle"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        android:textColor="@color/color9"
+        android:layout_toRightOf="@id/depense_illustration_type"
+        android:visibility="gone"     
+    />
+    
+    <TextView 
+        android:id="@+id/depense_date"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/depense_libelle"
+        android:textSize="11sp"
+        android:textStyle="italic"
+        android:textColor="@color/color9"
+        android:layout_toRightOf="@id/depense_illustration_type"
+        
+    />
+    
+    
+    <TextView 
+        android:id="@+id/depense_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/depense_type"
+        android:visibility="gone"
+        android:layout_toRightOf="@id/depense_illustration_type"
+    />
+
+    <CheckBox
+        android:id="@+id/depense_checked_checkbox"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:clickable="false"
+    />
+</org.protech.theprophet.android.gestionnairedepenses.customviews.DepenseItemLayout>
+<!--</RelativeLayout>-->

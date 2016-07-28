@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingLeft="5sp"
+              android:paddingRight="5sp"
+              
+>   
+
+    <!-- Corps -->
+    
+        <TextView 
+            android:id="@+id/liste_depenses_somme_depenses_text_view"
+            android:layout_marginTop="3sp"
+            android:padding="3sp"
+            android:paddingLeft="0sp"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@color/color9"
+        
+        />
+    
+    <ListView 
+        
+        android:id="@+id/liste_depenses_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color9"
+        android:dividerHeight="1dp"
+        android:smoothScrollbar="true"
+        android:layout_weight="96"
+    />
+
+</LinearLayout>

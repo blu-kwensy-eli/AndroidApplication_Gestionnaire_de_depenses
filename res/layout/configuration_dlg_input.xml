@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout-->
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"        
+>     
+    <TextView 
+        android:id="@+id/application_dlg_custom_title_value"
+        style="@style/AppTextViewDisplayData"    
+        android:paddingBottom="0sp"
+        android:paddingLeft="13sp"        
+        android:height="52sp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/color9"  
+        android:gravity="left|center_vertical"  
+        android:layout_marginBottom="3sp"
+        android:visibility="visible"
+        
+        
+        
+    />
+    <EditText
+        style="@style/AppEditText"
+        android:id="@+id/configuration_dlg_input_nouvelle_valeur"
+        android:inputType="numberDecimal" 
+    />
+   
+</LinearLayout>
+<!--</RelativeLayout>-->

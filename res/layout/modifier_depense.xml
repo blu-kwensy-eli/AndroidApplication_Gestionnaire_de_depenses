@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingTop="10sp"
+              
+>   
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    >
+        
+        
+            <TextView       
+                style="@style/AppEditTextLabel"
+                android:text="Libellé"            
+            />
+            <EditText
+                style="@style/AppEditText"
+            android:id="@+id/modifier_depense_libelle_edit_text"
+            android:inputType="text" 
+        />
+        
+        
+        <TextView       
+            style="@style/AppEditTextLabel"
+            android:text="Montant"            
+        />
+        
+        <EditText
+            style="@style/AppEditText"
+            android:id="@+id/modifier_depense_montant_edit_text"
+            android:inputType="numberDecimal"            
+         />
+         <TextView       
+             style="@style/AppEditTextLabel"
+             android:text="Devise"            
+         />
+        
+         <Spinner        
+             android:id="@+id/modifier_depense_devise_spinner"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:choiceMode="singleChoice"
+             android:layout_marginBottom="10dp"   
+             style="AppInputTextColor"            
+         />
+           
+        <TextView       
+            style="@style/AppEditTextLabel"
+            android:text="Date"            
+        />
+        <EditText
+            style="@style/AppEditText"
+            android:id="@+id/modifier_depense_date_edit_text"
+            android:inputType="datetime"
+            android:hint="jj/MM/aaaa hh:mm"
+        />
+        <TextView       
+            style="@style/AppEditTextLabel"
+            android:text="Type"            
+        />
+        <Spinner        
+            android:id="@+id/modifier_depense_type_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:layout_marginBottom="10dp"   
+            style="AppInputTextColor"            
+        />
+        <org.protech.theprophet.android.gestionnairedepenses.customviews.Button 
+            android:id="@+id/modifier_depense_ok_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"          
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            style="AppBtnTextColor"
+            
+        />
+        
+ 
+    </LinearLayout>
+</ScrollView>

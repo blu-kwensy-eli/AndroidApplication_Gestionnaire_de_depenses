@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color1">#237600</color>
+    <color name="color2">#FFDD00</color>
+    <color name="color3">#00FF00</color>
+    <color name="color4">#093442</color>
+    <color name="color5">#999999</color>
+    <color name="color8">#454412</color>
+    <color name="color9">#97977b</color>
+    <color name="highlight_color">#0000FF</color>
+    <!--TP Notepad-->
+    <color name="background">#99CCFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <!--Cette couleur est assez particulières. Remarquer 4eme octet pour la transparence-->
+    <color name="translucide">#00000000</color>
+</resources>
