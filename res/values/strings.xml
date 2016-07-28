@@ -23,4 +23,5 @@
     <string name="dialog_configuration_changer_taux_annuler">Annuler</string>
     <string name="menu_item_title_repartir">Répartir</string>
     <string name="menu_item_title_retablir">Rétablir</string>
+    <string name="bonjour">Bonjour</string>
 </resources>
