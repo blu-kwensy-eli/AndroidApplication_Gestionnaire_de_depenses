@@ -122,7 +122,6 @@ public final class R {
         public static final int aucune_depense=0x7f070009;
         public static final int aujourd_hui=0x7f07000e;
         public static final int bonjour=0x7f070017;
-        public static final int bonsoir=0x7f070018;
         public static final int configuration=0x7f07000c;
         public static final int configuration_taux_change=0x7f07000d;
         public static final int date=0x7f070006;
