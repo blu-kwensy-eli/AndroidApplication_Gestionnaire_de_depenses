@@ -17,20 +17,21 @@ public final class R {
     public static final class color {
         /** TP Notepad
          */
-        public static final int background=0x7f060008;
-        public static final int black=0x7f060009;
+        public static final int background=0x7f060009;
+        public static final int black=0x7f06000a;
         public static final int color1=0x7f060000;
+        public static final int color10=0x7f060007;
         public static final int color2=0x7f060001;
         public static final int color3=0x7f060002;
         public static final int color4=0x7f060003;
         public static final int color5=0x7f060004;
         public static final int color8=0x7f060005;
         public static final int color9=0x7f060006;
-        public static final int highlight_color=0x7f060007;
+        public static final int highlight_color=0x7f060008;
         /** Cette couleur est assez particulières. Remarquer 4eme octet pour la transparence
          */
-        public static final int translucide=0x7f06000b;
-        public static final int white=0x7f06000a;
+        public static final int translucide=0x7f06000c;
+        public static final int white=0x7f06000b;
     }
     public static final class drawable {
         public static final int background_97977b=0x7f020000;
@@ -122,7 +123,6 @@ public final class R {
         public static final int aucune_depense=0x7f070009;
         public static final int aujourd_hui=0x7f07000e;
         public static final int bonjour=0x7f070017;
-        public static final int bonjur=0x7f070018;
         public static final int configuration=0x7f07000c;
         public static final int configuration_taux_change=0x7f07000d;
         public static final int date=0x7f070006;
